@@ -8,19 +8,15 @@
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+    <body>
     <img src="resources/img/smcs_wiki.png" alt="SMCS '27 Wiki" class="logo">
     <div class="search">
-        <form id="search-form">
-            <input type="text" id="search-input" class="search-bar" placeholder="Search SMCS '27 Wiki..." required />
-            <button type="submit" class="search-button">
-                <i class="fa-solid fa-magnifying-glass" style="color: #d7594c;"></i>
-            </button>
-        </form>
+        <input type="text" id="searchinput" placeholder="Search SMCS '27 Wiki..." required />
+        <button type="submit" id="search-button" onclick="search()">
+            <i class="fa-solid fa-magnifying-glass" style="color: #db2222;"></i>
+        </button>
     </div>
 
-    <p>
-        Hello, World!
-    </p>
-</body>
+    <ul id="results"></ul>
+    </body>
 </html>
