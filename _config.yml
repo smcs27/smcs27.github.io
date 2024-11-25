@@ -1,19 +1,1 @@
-remote_theme: Drassil/git-wiki-theme@master
-
 name: SMCS '27 Wiki
-
-plugins:
-  - jekyll-remote-theme
-
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      layout: "git-wiki-bs-lux"
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "git-wiki-bs-lux"

@@ -12,7 +12,7 @@
   {
     "title": "Fight Time",
     "url": "/page/fight-time.html",
-    "description": "Phrase popularized by student in freshman year."
+    "description": "Phrase popularized by a student in freshman year."
   },
   {
     "title": "Diddy Park",
@@ -21,6 +21,11 @@
   },
   {
     "title": "i",
+    "url": "/page/diddy-park.html",
+    "description": "i"
+  },
+  {
+    "title": "ii",
     "url": "/page/diddy-park.html",
     "description": "i"
   }

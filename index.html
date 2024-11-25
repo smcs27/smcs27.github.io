@@ -4,19 +4,57 @@
     <link rel="icon" href="resources/img/fav.png" type="image/png">
     <meta charset="UTF-8">
     <title>SMCS '27 Wiki</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/5a6fc2c1d3.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <img src="resources/img/wiki_logo.png" alt="SMCS '27 Wiki" id="logo">
     <div class="search">
-        <input type="text" id="searchinput" placeholder="Search SMCS '27 Wiki..." required />
-        <button type="submit" id="search-button" onclick="search()">
+        <input type="text" id="searchinput" placeholder="Search SMCS '27 Wiki..." oninput="searchWiki()">
+        <button type="submit" id="search-button" onclick="searchWiki()">
             <i class="fa-solid fa-magnifying-glass" style="color: #db2222;"></i>
         </button>
     </div>
 
     <ul id ="resultbox"></ul>
+
+    <div id="footerlinks">
+        <footer>
+            <table>
+                <tr>
+                    <!-- Github -->
+                    <td>
+                        <a href="https://github.com/smcs27/wiki">
+                            <button class="footer-button"><img src="./resources/img/gh_logo.png" alt="Github" class="buttonlinks" id="imggh"></button>
+                        </a>
+                    </td>
+                    <!-- TODO: Add contributing images + better logos -->
+                    <!-- Page request -->
+                    <td>
+                        <a href="https://github.com/smcs27/wiki/issues/new?assignees=&labels=&projects=&template=page-request.md&title=Page+Request+-+%5BPAGE+NAME%5D">
+                            <button class="footer-button"><img src="./resources/img/gh_logo.png" alt="Page Request" class="buttonlinks"></button>
+                        </a>
+                    </td>
+                    <!-- Bug report -->
+                    <td>
+                        <a href="https://github.com/smcs27/wiki/issues/new?assignees=&labels=&projects=&template=bug-report.md&title=Bug+Report+-+%5BSHORT+DESCRIPTION%5D">
+                            <button class="footer-button"><img src="./resources/img/gh_logo.png" alt="Bug Report" class="buttonlinks"></button>
+                        </a>
+                    </td>
+                    <!-- Music -->
+                    <td>
+                        <a href="https://smcs27.github.io/music/">
+                            <button class="footer-button"><img src="./resources/img/disc_black.png" alt="Music" class="buttonlinks" id="imgmusic"></button>
+                        </a>
+                    </td>
+                    <!-- Theme Toggle -->
+                    <td>
+                        <button class="footer-button themetoggle"><img src="./resources/img/contrast-icon.png" alt="Toggle Theme" class="buttonlinks"></button>
+                    </td>
+                </tr>
+            </table>
+        </footer>
+    </div>
 </body>
 </html>
