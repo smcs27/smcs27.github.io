@@ -33,7 +33,12 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        const matches = pages.filter(page => cleanTitle(page.title).includes(cleanTitle(query)));
+        const matches = pages
+            .filter(page =>
+                cleanTitle(page.title).includes(cleanTitle(query))
+            ).sort(
+                function(a, b) { return a.title.indexOf(query) - b.title.indexOf(query)}
+            );
 
         console.log(matches);
 
