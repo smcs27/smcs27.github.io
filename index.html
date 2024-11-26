@@ -6,51 +6,51 @@
     <title>SMCS '27 Wiki</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/5a6fc2c1d3.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="search.js"></script>
+    <script src="theme.js"></script>
 </head>
 <body>
     <img src="resources/img/wiki_logo.png" alt="SMCS '27 Wiki" id="logo">
     <div class="search">
-        <input type="text" id="searchinput" placeholder="Search SMCS '27 Wiki..." oninput="searchWiki()">
-        <button type="submit" id="search-button" onclick="searchWiki()">
-            <i class="fa-solid fa-magnifying-glass" style="color: #db2222;"></i>
-        </button>
+        <input type="text" id="searchinput" placeholder="Search SMCS '27 Wiki...">
+        <i id="search-button" class="fa-solid fa-magnifying-glass" style="color: #db2222;"></i>
     </div>
 
     <ul id ="resultbox"></ul>
 
-    <div id="footerlinks">
+    <div id="footerbar">
         <footer>
             <table>
                 <tr>
                     <!-- Github -->
                     <td>
                         <a href="https://github.com/smcs27/wiki">
-                            <button class="footer-button"><img src="./resources/img/gh_logo.png" alt="Github" class="buttonlinks" id="imggh"></button>
+                            <button class="footer-button" title="View code on Github"><img src="resources/img/gh_logo_light.png" alt="Github" class="buttonlinks" id="imggh"></button>
                         </a>
                     </td>
                     <!-- TODO: Add contributing images + better logos -->
                     <!-- Page request -->
                     <td>
                         <a href="https://github.com/smcs27/wiki/issues/new?assignees=&labels=&projects=&template=page-request.md&title=Page+Request+-+%5BPAGE+NAME%5D">
-                            <button class="footer-button"><img src="./resources/img/gh_logo.png" alt="Page Request" class="buttonlinks"></button>
+                            <button class="footer-button" title="Request a page"><img src="./resources/img/add_page_dark.png" alt="Page Request" class="buttonlinks" id="imgpr"></button>
                         </a>
                     </td>
                     <!-- Bug report -->
                     <td>
                         <a href="https://github.com/smcs27/wiki/issues/new?assignees=&labels=&projects=&template=bug-report.md&title=Bug+Report+-+%5BSHORT+DESCRIPTION%5D">
-                            <button class="footer-button"><img src="./resources/img/gh_logo.png" alt="Bug Report" class="buttonlinks"></button>
+                            <button class="footer-button" title="Report a bug"><img src="./resources/img/bug_dark.png" alt="Bug Report" class="buttonlinks" id="imgbug"></button>
                         </a>
                     </td>
                     <!-- Music -->
                     <td>
                         <a href="https://smcs27.github.io/music/">
-                            <button class="footer-button"><img src="./resources/img/disc_black.png" alt="Music" class="buttonlinks" id="imgmusic"></button>
+                            <button class="footer-button" title="SMCS '27 Music"><img src="./resources/img/disc_black.png" alt="Music" class="buttonlinks" id="imgmusic"></button>
                         </a>
                     </td>
                     <!-- Theme Toggle -->
+                    <!-- Theme icons by Free Icons (https://free-icons.github.io/free-icons/) -->
                     <td>
-                        <button class="footer-button themetoggle"><img src="./resources/img/contrast-icon.png" alt="Toggle Theme" class="buttonlinks"></button>
+                        <button class="footer-button themetoggle" title="Toggle theme"><img src="./resources/img/sun.png" alt="Toggle Theme" class="buttonlinks" id="imgtheme"></button>
                     </td>
                 </tr>
             </table>

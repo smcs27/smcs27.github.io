@@ -9,7 +9,6 @@ body.dark-mode {
     background-color: #060606;
 
     /* "Invert" */
-    --high-constrast-gray: #a9a9a9;
     --low-contrast-gray: #1a1a1e;
     --text-color: #fff;
 }
@@ -93,7 +92,7 @@ body {
 
 #resultbox {
     width: 100vh;
-    height: 33vh;
+    height: 35.5vh;
     list-style-type: none;
     line-height: 1vh;
     border: var(--high-constrast-gray) solid 1px;
@@ -102,7 +101,7 @@ body {
 
 li {
     height: 11vh;
-    transform: translateY(2.5vh);
+    transform: translateY(3.5vh);
 }
 
 a {
@@ -126,8 +125,8 @@ p {
     text-align: center;
 }
 
-#footerlinks {
-    height: 8.5vh;
+#footerbar {
+    height: 8vh;
     width: 100%;
     background: var(--low-contrast-gray);
     position: absolute;
@@ -157,4 +156,5 @@ td {
 
 .buttonlinks {
     height: 6vh;
+    transform: translateY(0.25vh);
 }
