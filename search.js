@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
             .filter(page =>
                 cleanTitle(page.title).includes(cleanTitle(query))
             ).sort(
-                function(a, b) { return a.title.indexOf(query) - b.title.indexOf(query)}
+                function(a, b) { return cleanTitle(a.title).indexOf(query) - cleanTitle(b.title).indexOf(query)}
             );
 
         console.log(matches);
