@@ -1,0 +1,78 @@
+/*
+* For use by all html files in this project
+ */
+
+:root {
+    --smcs-red: #db2222;
+    --sidebar-gray: #666;
+    --high-constrast-gray: #a9a9a9;
+    --low-contrast-gray: #d3d3d3;
+    --text-color: #000;
+}
+
+body.dark-mode {
+    background-color: #060606;
+
+    /* "Invert" */
+    --sidebar-gray: #343434;
+    --low-contrast-gray: #1a1a1e;
+    --text-color: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    font-size: x-large;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+p {
+    color: var(--text-color);
+    font-size: large;
+    font-weight: 500;
+}
+
+#footerbar {
+    height: 8vh;
+    width: 100%;
+    background: var(--low-contrast-gray);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    flex-direction: column;
+}
+
+td {
+    width: 8vh;
+    align-content: center;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.footer-button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    box-shadow: transparent 0 0;
+    outline: none;
+}
+
+.buttonlinks {
+    height: 6vh;
+    transform: translateY(0.25vh);
+}

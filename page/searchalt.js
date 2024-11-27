@@ -1,3 +1,6 @@
+/*
+* Same as the original search.js, but updates the output to the user differently.
+ */
 document.addEventListener('DOMContentLoaded', () => {
     let pages = [];
 

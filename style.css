@@ -1,30 +1,10 @@
-:root {
-    --smcs-red: #db2222;
-    --high-constrast-gray: #a9a9a9;
-    --low-contrast-gray: #d3d3d3;
-    --text-color: #000;
-}
-
-body.dark-mode {
-    background-color: #060606;
-
-    /* "Invert" */
-    --low-contrast-gray: #1a1a1e;
-    --text-color: #fff;
-}
-
-* {
-    box-sizing: border-box;
-}
+/*
+* For index.html
+ */
 
 body {
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
 }
 
 #logo {
@@ -104,57 +84,10 @@ li {
     transform: translateY(3.5vh);
 }
 
-a {
-    font-size: x-large;
-    font-weight: 800;
-    text-decoration: none;
-    color: var(--smcs-red);
-}
-
-p {
-    color: var(--text-color);
-    font-size: large;
-    font-weight: 500;
-}
-
 #blankwarning {
     font-size: xxx-large;
     font-weight: bold;
     color: var(--high-constrast-gray);
     line-height: 100%;
     text-align: center;
-}
-
-#footerbar {
-    height: 8vh;
-    width: 100%;
-    background: var(--low-contrast-gray);
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    display: flex;
-    align-items: end;
-    justify-content: center;
-    flex-direction: column;
-}
-
-td {
-    width: 8vh;
-    align-content: center;
-    text-align: center;
-    vertical-align: middle;
-}
-
-.footer-button {
-    background-color: transparent;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: pointer;
-    box-shadow: transparent 0 0;
-    outline: none;
-}
-
-.buttonlinks {
-    height: 6vh;
-    transform: translateY(0.25vh);
 }

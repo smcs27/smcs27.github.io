@@ -1,0 +1,57 @@
+.sidebar {
+    height: 100%;
+    width: 12vw;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--sidebar-gray);
+    overflow-x: hidden;
+    padding-top: 20px;
+    padding-left: 2vw;
+}
+
+#logo {
+    width: 8vw;
+    text-align: center;
+}
+
+.main {
+    margin-left: 15vw;
+}
+
+.infobox {
+    width: 20vw;
+    float: right;
+    border: 3px double var(--low-contrast-gray);
+    margin: 1vh 4vw 5vw;
+}
+
+table {
+    width: 100%;
+}
+
+.center {
+    text-align: center;
+}
+
+h3 {
+    color: white;
+}
+
+tr {
+    width: 20vw;
+}
+
+.thumbnail-container {
+    width: 20vw;
+    align-items: center;
+}
+
+.thumbnail {
+    width: 15vw;
+}
+
+.split {
+    width: 10vw;
+}
