@@ -18,28 +18,58 @@
 
 .main {
     margin-left: 15vw;
+    margin-bottom: 10vh;
+}
+
+.header {
+    width: 100%;
+    height: 17vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .infobox {
     width: 20vw;
     float: right;
-    border: 3px double var(--low-contrast-gray);
-    margin: 1vh 4vw 5vw;
+    border: 3px double var(--high-constrast-gray);
+    margin: 1vh 4vw 1vh 4vw;
 }
 
-table {
-    width: 100%;
+.searchcell {
+    vertical-align: top;
+    width: 30%;
+}
+
+.searchbox {
+    width: 24vw;
+    align-items: end;
+    margin-right: 3vw;
+}
+
+.bottomstick {
+    margin-top: auto;
+    margin-bottom: 2px;
+    padding-bottom: 0;
+    position: relative;
+}
+
+.title {
+    text-align: left;
+    vertical-align: bottom;
+    font-size: xxx-large;
+    height: 100%;
+    margin-bottom: 0;
 }
 
 .center {
     text-align: center;
 }
 
-h3 {
-    color: white;
+h1, h3 {
+    color: var(--text-color);
 }
 
-tr {
+.inforow {
     width: 20vw;
 }
 

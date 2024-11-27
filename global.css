@@ -16,11 +16,12 @@ body.dark-mode {
     /* "Invert" */
     --sidebar-gray: #343434;
     --low-contrast-gray: #1a1a1e;
-    --text-color: #fff;
+    --text-color: #ddd;
 }
 
 * {
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 body {
@@ -32,6 +33,7 @@ body {
 }
 
 a {
+    color: var(--smcs-red);
     font-size: x-large;
     font-weight: 800;
     text-decoration: none;
@@ -43,11 +45,67 @@ p {
     font-weight: 500;
 }
 
+.search {
+    height: 7vh;
+    margin-top: 3vh;
+    margin-bottom: 4vh;
+    padding: 0;
+    font-size: 32px;
+    background-color: var(--low-contrast-gray);
+    border-color: var(--smcs-red);
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#searchinput {
+    transform: translate(2%, -5px);
+    background-color: var(--low-contrast-gray);
+    color: var(--text-color);
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    height: 5vh;
+    width: 20vw;
+    position: relative;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+#searchinput:focus {
+    outline: none;
+}
+
+#search-button {
+    padding-right: 2%;
+    font-size: 32px;
+    background-color: transparent;
+    border: none;
+    height: 6vh;
+    width: 5vh;
+    vertical-align: central;
+    align-content: center;
+    line-height: 5vh;
+}
+
+.clearfix{
+    overflow: auto;
+}
+
+.clearfix::after {
+    content:"";
+    clear: both;
+    display:table;
+}
+
 #footerbar {
     height: 8vh;
     width: 100%;
     background: var(--low-contrast-gray);
-    position: absolute;
+    position: fixed;
     left: 0;
     bottom: 0;
     display: flex;
@@ -56,7 +114,7 @@ p {
     flex-direction: column;
 }
 
-td {
+.footercell {
     width: 8vh;
     align-content: center;
     text-align: center;
