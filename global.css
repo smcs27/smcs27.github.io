@@ -49,8 +49,9 @@ p {
 
 .search {
     height: 7vh;
+    width: 25vw;
     margin-top: 3vh;
-    margin-bottom: 4vh;
+    margin-bottom: 3vh;
     padding: 0;
     font-size: 32px;
     background-color: var(--low-contrast-gray);
@@ -60,6 +61,7 @@ p {
     border-radius: 10px;
     display: inline-block;
     vertical-align: middle;
+    text-align: left;
 }
 
 #searchinput {
@@ -67,33 +69,21 @@ p {
     background-color: var(--low-contrast-gray);
     color: var(--text-color);
     text-align: left;
-    font-size: 20px;
+    font-size: large;
     font-weight: bold;
     height: 5vh;
     width: 20vw;
     position: relative;
     border: none;
     padding: 0;
-    margin: 0;
+    margin-top: 1vh;
 }
 
 #searchinput:focus {
     outline: none;
 }
 
-#search-button {
-    padding-right: 2%;
-    font-size: 32px;
-    background-color: transparent;
-    border: none;
-    height: 6vh;
-    width: 5vh;
-    vertical-align: central;
-    align-content: center;
-    line-height: 5vh;
-}
-
-.clearfix{
+.clearfix {
     overflow: auto;
 }
 

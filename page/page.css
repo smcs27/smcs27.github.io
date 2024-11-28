@@ -42,18 +42,8 @@
 
 .searchbox {
     width: 27vw;
-    align-items: end;
     margin-right: 3vw;
     margin-bottom: 0;
-}
-
-#searchinput {
-    font-size: large;
-    transform: translateX(-0.5vw);
-}
-
-#search-button {
-    transform: translateX(1.5vw);
 }
 
 .titlecell {
