@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="page.css">
     <script src="https://kit.fontawesome.com/5a6fc2c1d3.js" crossorigin="anonymous"></script>
     <script src="../theme.js"></script>
-    <script src="/search.js"></script>
+    <script src="/page/dropdown-search.js"></script>
 </head>
 <body>
     <div class="sidebar">
@@ -20,7 +20,7 @@
         <table class="header">
             <tbody>
             <tr>
-                <td class="bottomstick">
+                <td class="titlecell">
                     <h1 class="title">Template</h1>
                 </td>
                 <td class="center searchcell">
@@ -28,6 +28,8 @@
                         <input type="text" id="searchinput" placeholder="Search SMCS '27 Wiki...">
                         <i id="search-button" class="fa-solid fa-magnifying-glass" style="color: #db2222;"></i>
                     </div>
+
+                    <ul class="hidden" id="dropdownresults"></ul>
                 </td>
             </tr>
             </tbody>
@@ -35,40 +37,38 @@
 
         <hr>
 
-        <div>
-            <div class="infobox">
-                <table>
-                    <tbody>
-                    <tr class="inforow center">
-                        <td colspan="2">
-                            <h3>Template</h3>
-                        </td>
-                    </tr>
-                    <tr class="inforow center">
-                        <td colspan="2" class="thumbnail-container">
-                            <img src="/resources/img/logos/wiki_logo.png" alt="SMCS '27 Wiki" class="thumbnail" width="100%">
-                        </td>
-                    </tr>
+        <div class="infobox">
+            <table>
+                <tbody>
+                <tr class="inforow center">
+                    <td colspan="2">
+                        <h3>Template</h3>
+                    </td>
+                </tr>
+                <tr class="inforow center">
+                    <td colspan="2" class="thumbnail-container">
+                        <img src="/resources/img/logos/wiki_logo.png" alt="SMCS '27 Wiki" class="thumbnail" width="100%">
+                    </td>
+                </tr>
 
-                    <tr class="inforow">
-                        <td class="split">
-                            <p>One</p>
-                        </td>
-                        <td class="split">
-                            <p>1</p>
-                        </td>
-                    </tr>
-                    <tr class="inforow">
-                        <td class="split">
-                            <p>Two</p>
-                        </td>
-                        <td class="split">
-                            <p>2</p>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
+                <tr class="inforow">
+                    <td class="split">
+                        <p>One</p>
+                    </td>
+                    <td class="split">
+                        <p>1</p>
+                    </td>
+                </tr>
+                <tr class="inforow">
+                    <td class="split">
+                        <p>Two</p>
+                    </td>
+                    <td class="split">
+                        <p>2</p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
         </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>

@@ -20,7 +20,8 @@ body {
     list-style-type: none;
     line-height: 1vh;
     border: var(--high-constrast-gray) solid 1px;
-    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 li {

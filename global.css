@@ -3,6 +3,7 @@
  */
 
 :root {
+    --background-color: #fff;
     --smcs-red: #db2222;
     --sidebar-gray: #666;
     --high-constrast-gray: #a9a9a9;
@@ -11,12 +12,13 @@
 }
 
 body.dark-mode {
-    background-color: #060606;
-
     /* "Invert" */
+    --background-color: #060606;
     --sidebar-gray: #343434;
     --low-contrast-gray: #1a1a1e;
     --text-color: #ddd;
+
+    background-color: var(--background-color);
 }
 
 * {
