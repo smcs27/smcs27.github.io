@@ -1,3 +1,9 @@
+/*
+* A bit different from the search.js presented on the home screen, as this one
+* appears in a pop-up dropdown list below the search bar and is required to
+* filter out the current page from the outputs.
+ */
+
 const CURRENT_URL = window.location.href;
 const CURRENT_PAGE = CURRENT_URL
     .split("/")[CURRENT_URL.split("/").length - 1]
