@@ -1,6 +1,6 @@
 .sidebar {
     height: 100%;
-    width: 12vw;
+    width: 200px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -8,7 +8,7 @@
     background-color: var(--sidebar-gray);
     overflow-x: hidden;
     padding-top: 20px;
-    padding-left: 1vw;
+    padding-left: 20px;
 }
 
 #random {
@@ -16,20 +16,21 @@
 }
 
 #logocontainer {
-    width: 11vw;
-    margin-bottom: 1vh;
+    width: 160px;
+    height: 160px;
+    margin-bottom: 2vh;
 }
 
 #logo {
-    padding-left: 2vw;
-    width: 8vw;
-
+    width: 160px;
+    height: 160px;
     text-align: center;
 }
 
 .main {
-    margin-left: 15vw;
+    margin-left: 240px;
     margin-bottom: 10vh;
+    margin-right: 3vw;
 }
 
 .header {
@@ -40,10 +41,10 @@
 }
 
 .infobox {
-    width: 20vw;
+    width: 15vw;
     float: right;
     border: 3px double var(--high-constrast-gray);
-    margin: 1vh 4vw 1vh 4vw;
+    margin: 1vh 0 1vh 2vw;
 }
 
 .searchcell {
@@ -53,7 +54,6 @@
 
 .searchbox {
     width: 27vw;
-    margin-right: 3vw;
     margin-bottom: 0;
 }
 
@@ -106,12 +106,15 @@ h1, h2, h3 {
 }
 
 .thumbnail-container {
-    width: 20vw;
+    width: 15vw;
     align-items: center;
 }
 
 .thumbnail {
-    width: 15vw;
+    max-height: 13vw;
+    max-width: 13vw;
+    height: auto;
+    width: auto
 }
 
 .split {
@@ -129,12 +132,12 @@ li {
 }
 
 #dropdownresults {
+    max-height: 20vh;
     width: 27vw;
     list-style-type: none;
     line-height: 1vh;
     overflow-x: hidden;
     overflow-y: auto;
-    margin-right: 3vw;
     display: block;
     background-color: var(--background-color);
     margin-top: 0;
@@ -159,12 +162,8 @@ li {
     font-size: small;
 }
 
-.bodypara {
-    margin-right: 3vw;
-}
-
 #scrolltop {
-    width: 4vw;
+    width: 80px;
     display: none;
     position: fixed;
     bottom: 8vh;
