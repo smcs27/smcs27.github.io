@@ -24,6 +24,10 @@ body {
     overflow-y: auto;
 }
 
+a {
+    font-size: x-large;
+}
+
 li {
     height: 11vh;
     transform: translateY(3.5vh);

@@ -40,9 +40,40 @@
     flex-direction: column;
 }
 
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.docimgcontainer {
+    align-items: center;
+    text-align: center;
+    width: 175px;
+    height: fit-content;
+    border: 4px double var(--high-constrast-gray);
+}
+
+.docimgcontainer.left {
+    margin-right: 1vw;
+}
+
+.docimgcontainer.right {
+    margin-left: 1vw;
+}
+
+.docimg {
+    padding: 10px;
+    max-width: 150px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+}
+
 .infobox {
     width: 15vw;
-    float: right;
     border: 3px double var(--high-constrast-gray);
     margin: 1vh 0 1vh 2vw;
 }
@@ -82,23 +113,18 @@ h2 {
     font-size: x-large;
 }
 
-h1, h2, h3 {
+h1, h2, h3, small {
     color: var(--text-color);
 }
 
 .sidelink {
     color: var(--text-color);
     height: fit-content;
-    font-size: xx-large;
+    width: fit-content;
+    font-size: x-large;
     font-weight: normal;
     padding: 0.5vh 0 1vh 0;
-    text-decoration: none;
     display: block;
-}
-
-.sidelink.hover {
-    text-decoration: underline;
-    border-bottom: 2px solid var(--text-color);
 }
 
 .inforow {
