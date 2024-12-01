@@ -86,6 +86,10 @@ p {
     outline: none;
 }
 
+.searchlink {
+    font-weight: 800;
+}
+
 #footerbar {
     height: 8vh;
     width: 100%;

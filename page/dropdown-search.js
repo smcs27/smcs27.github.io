@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const listItem = document.createElement('li');
                 listItem.className = 'result-item';
                 listItem.innerHTML = `
-                    <a href="${match.url}" id="dropdownlink">${match.title}</a>
+                    <a href="${match.url}" id="dropdownlink" class="searchlink">${match.title}</a>
                     <p id="dropdowndesc">${match.description}</p>
                 `;
                 resultsContainer.appendChild(listItem);

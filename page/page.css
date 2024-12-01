@@ -90,19 +90,17 @@
 
 .titlecell {
     height: 17vh;
-    margin-top: auto;
     margin-bottom: 2px;
     padding-bottom: 0;
     position: relative;
+    display: flex;
+    align-items: flex-end
 }
 
 .title {
     text-align: left;
-    vertical-align: bottom;
     font-size: xxx-large;
-    height: 100%;
-    margin-top: 11vh;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .center {
@@ -199,4 +197,12 @@ li {
     outline: none;
     cursor: pointer;
     padding: 15px;
+}
+
+.bodypara {
+    margin-top: 0;
+}
+
+hr {
+    margin-bottom: 2vh;
 }
