@@ -65,21 +65,22 @@ p {
     display: inline-block;
     vertical-align: middle;
     text-align: left;
+    position: relative;
 }
 
 #searchinput {
-    transform: translateX(2%);
-    background-color: var(--low-contrast-gray);
+    background-color: transparent;
     color: var(--text-color);
     text-align: left;
-    font-size: x-large;
+    font-size: large;
     font-weight: bold;
-    height: 5vh;
+    top: 0;
+    left: 2%;
+    height: 100%;
     width: 90%;
-    position: relative;
+    position: absolute;
     border: none;
     padding: 0;
-    margin-top: 1vh;
 }
 
 #searchinput:focus {
