@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     let pages = [];
 
-    fetch('./resources/pages/pages.json')
+    fetch('/resources/pages/pages.json')
         .then(response => {
             if (!response.ok) {
                 throw new Error("Failed to load pages");
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
             .filter(page =>
                 cleanTitle(page.title).includes(cleanTitle(query))
             ).sort(
-                function(a, b) { return a.title.indexOf(query) - b.title.indexOf(query)}
+                function(a, b) { return cleanTitle(a.title).indexOf(query) - cleanTitle(b.title).indexOf(query)}
             );
 
         console.log(matches);
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const listItem = document.createElement('li');
                 listItem.className = 'result-item';
                 listItem.innerHTML = `
-                    <a href="${match.url}">${match.title}</a>
+                    <a href="${match.url}" class="searchlink">${match.title}</a>
                     <p>${match.description}</p>
                 `;
                 resultsContainer.appendChild(listItem);

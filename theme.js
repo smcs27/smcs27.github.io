@@ -25,17 +25,17 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         if (theme === "dark") {
-            imageForGH.src = "./resources/img/gh_logo_white.png";
-            imageForPR.src = "./resources/img/add_page.png";
-            imageForBug.src = "./resources/img/bug_light.png";
-            imageForMusic.src = "./resources/img/disc_white.png";
-            imageForTheme.src = "./resources/img/moon.png"
+            imageForGH.src = "/resources/img/logos/gh_logo_white.png";
+            imageForPR.src = "/resources/img/logos/add_page.png";
+            imageForBug.src = "/resources/img/logos/bug_light.png";
+            imageForMusic.src = "/resources/img/logos/disc_white.png";
+            imageForTheme.src = "/resources/img/logos/moon.png"
         } else {
-            imageForGH.src = "./resources/img/gh_logo_light.png";
-            imageForPR.src = "./resources/img/add_page_dark.png";
-            imageForBug.src = "./resources/img/bug_dark.png";
-            imageForMusic.src = "./resources/img/disc_black.png";
-            imageForTheme.src = "./resources/img/sun.png"
+            imageForGH.src = "/resources/img/logos/gh_logo_light.png";
+            imageForPR.src = "/resources/img/logos/add_page_dark.png";
+            imageForBug.src = "/resources/img/logos/bug_dark.png";
+            imageForMusic.src = "/resources/img/logos/disc_black.png";
+            imageForTheme.src = "/resources/img/logos/sun.png"
         }
 
         localStorage.setItem("theme", theme);
