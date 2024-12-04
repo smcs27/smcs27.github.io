@@ -1,0 +1,42 @@
+/*
+* For index.html
+ */
+
+body {
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+}
+
+#resultbox {
+    width: 100vh;
+    height: 35.5vh;
+    list-style-type: none;
+    line-height: 1vh;
+    border: var(--high-constrast-gray) solid 1px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+a {
+    font-size: x-large;
+}
+
+li {
+    height: 11vh;
+    transform: translateY(3.5vh);
+}
+
+#blankwarning {
+    font-size: xxx-large;
+    font-weight: bold;
+    color: var(--high-constrast-gray);
+    line-height: 100%;
+    text-align: center;
+}
